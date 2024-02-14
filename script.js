@@ -6,8 +6,8 @@ document.getElementById('gridContainer').addEventListener('mousemove', function(
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateX = (y - centerY) / 10; // Y축 기준 회전 각도
-    const rotateY = (x - centerX) / 10; // X축 기준 회전 각도
+    const rotateX = (y - centerY) / 70; // Y축 기준 회전 각도
+    const rotateY = (x - centerX) / 70; // X축 기준 회전 각도
 
     for (let i = 1; i <= 5; i++) {
         const grid = document.getElementById(`grid${i}`);
