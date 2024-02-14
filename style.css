@@ -21,15 +21,16 @@ body {
     transform-style: preserve-3d; /* 자식 요소의 3D 변환을 유지 */
     padding: 10vh;
     padding-right: 20vw;
-    padding-left: 20vw;
+    padding-left: 10vw;
+    right: 3vw;
 }
 
 .grid {
     background-color: blue;
-    margin: 3px;
+    margin: 0.5vh;
     background: rgba(255, 255, 255, 0.39);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(77, 204, 233, 0.5);
     backdrop-filter: blur(7.9px);
     -webkit-backdrop-filter: blur(7.9px);
     border: 1px solid rgba(255, 255, 255, 0.56);
@@ -38,6 +39,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.grid:hover {
+    transform: scale(1.5);
+    background-color: white;
 }
     
 #grid1 { 
@@ -57,16 +62,16 @@ body {
 }
 
 #grid1, #grid4 {
-    width: 350px;
-    height: 350px;
+    width: 38vh;
+    height: 38vh;
 }
 
 #grid2, #grid3 {
-    height: 350px;
-    width: 700px;
+    height: 38vh;
+    width: 76vh;
 }
 
 #grid5 {
-    width: 350px;
-    height: 709px;
+    width: 38vh;
+    height: calc(76vh + 1.5vh);
 }
